@@ -1,0 +1,56 @@
+         <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>                
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffccd5;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #d6336c;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #6a0572;
+            margin-top: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .heart {
+            font-size: 3rem;
+            animation: heartbeat 1.5s infinite;
+            color: red;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey Beautiful! ❤️</h1>
+    <p>Every moment with you is special,  
+       and I just want you to know...  
+       You are the most wonderful part of my life. 💖</p>
+    <p class="heart">💓</p>
+    <script>
+        setTimeout(() => {
+            alert("You are truly special to me! ❤️");
+        }, 4000);
+    </script>
+</body>
+</html>
